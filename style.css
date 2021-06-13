@@ -1,0 +1,493 @@
+body{
+    margin-left: auto;
+    margin-right: auto;
+ 
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+header{
+    margin-top: 40px;
+}
+a{
+    text-decoration: none;
+    
+}
+header #heading{
+    float: left;
+    color:#333333;
+  
+}
+header #heading h1,p{
+    margin: 0;
+  
+}
+header nav{
+    float: right;
+}
+header nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    background-color:#e2494b;
+ 
+}
+header nav ul li{
+    display: inline-block;
+    padding:20px;
+}
+header nav ul li a{
+    color: white;
+}
+header nav ul li:hover a{
+    color:#eba0a1;
+}
+
+ #line{
+    clear: both;
+    position: relative;
+    top:20px;
+    width: 100%;
+    height: 1px;
+    background-color: #333333;
+}
+
+/* main content */
+main pre{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:gray;
+    font-size: 1.5em;
+}
+main #slider{
+    height: 350px;
+    width: 960px;
+    background-color:#333333;
+    margin-bottom: 30px;
+}
+
+/* services */
+#services #ourservices{
+    text-align: center;
+}
+#services #ourservices hr{
+    position: relative;
+    top:-47px;
+    z-index: 1;
+}
+#services h2{
+    position: relative;
+   color: white;
+   background-color: #e2494b;
+   padding: 5px 25px 5px 25px;
+   text-align: center;
+   display: inline-block;
+   border-radius: 10px;
+   z-index: 100;
+}
+#services .service{
+    width: 300px;
+    display: inline-block;
+ 
+}
+#services .margin{
+    margin-right: 26px;
+}
+
+#services .service .box{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: #333333;
+  
+}
+
+#services .service h3{
+    position: relative;
+    top:-12px;
+    left: 20px;
+}
+#services .service h3,p{
+    color:#333333;
+    display: inline-block;
+    
+}
+#services .service a{
+    color:#e2494b;
+}
+
+/* players */
+#players #ourplayers{
+    text-align: center;
+    margin-top: 20px;
+    color: #333333;
+}
+#players #ourplayers hr{
+    position: relative;
+    top:-47px;
+    z-index: 1;
+}
+#players h2{
+    position: relative;
+   color: white;
+   background-color: #e2494b;
+   padding: 5px 25px 5px 25px;
+   text-align: center;
+   display: inline-block;
+   border-radius: 10px;
+   z-index: 100;
+}
+#players .player{
+    width: 165px;
+    display: inline-block;
+ 
+}
+#players .player .box{
+    height: 180px;
+    width: 180px;
+    display: inline-block;
+    background-color: #333333;
+    overflow: hidden;
+  
+}
+#players .player .box img{
+    width: 180px;
+}
+.pmargin{
+    margin-right: 26px;
+}
+#players .player a{
+    color:#e2494b;
+}
+
+/* latest work */
+#works #ourworks{
+    text-align: center;
+    margin-top: 20px;
+    color: #333333;
+}
+#works #ourworks hr{
+    position: relative;
+    top:-47px;
+    z-index: 1;
+}
+#works h2{
+    position: relative;
+   color: white;
+   background-color: #e2494b;
+   padding: 5px 25px 5px 25px;
+   text-align: center;
+   display: inline-block;
+   border-radius: 10px;
+   z-index: 100;
+}
+#works .work{
+    display: inline-block;
+}
+#works .work .box{
+    height: 160px;
+    width: 300px;
+    display: inline-block;
+    background-color: #333333;
+    overflow: hidden;
+}
+#works .work .box img{
+    width: 150%;
+}
+.wmargin{
+   margin-right: 26px;
+}
+
+/* blog */
+footer{
+    background-color: #e2e2e2;
+    margin-top: 40px;
+}
+footer #blog{
+    position: relative;
+    top:-20px;
+    width: 450px;
+    padding: 20px;
+    display: inline-block;
+}
+footer #blog h3{
+    color: #999999;
+}
+footer #blog .post {
+    margin-top: 20px;
+}
+footer #blog .post h4{
+    color: #e2494b;
+}
+footer #blog .post p{
+    color: #999999;
+}
+footer #blog .box{
+    height: 95px;
+    width:95px ;
+    background-color: #333333;
+    outline: 1px solid #333333;
+    outline-offset:5px;
+    display: inline-block;
+    overflow: hidden;
+}
+footer #blog .box img{
+    width: 100px;
+}
+footer #blog .desc{
+width: 330px;
+display: inline-block;
+margin-left: 20px;
+}
+footer #blog .desc h4{
+    margin: 0 0 10px 0px;
+}
+
+/* company details */
+#detail{
+    position: relative;
+    top: -5px;
+    width: 200px;
+    display: inline-block;
+    color: #999999;
+}
+#detail #name,#detail #tel{
+    margin-bottom: 10px;
+}
+#detail #name,#tel,#timings{
+    color: #999999;
+}
+
+/* contact */
+#contact{
+    width: 200px;
+    display: inline-block;
+    
+}
+#contact h3{
+    color: #999999;
+}
+#contact form input,textarea{
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#contact form #submit{
+    background-color: #e2494b;
+    color: white;
+}
+
+/* copyrights */
+
+#copyrights hr{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(119, 119, 119);
+}
+#textfooter{
+    padding: 10px;
+}
+#copyrights #date{
+    display: inline;
+}
+#copyrights #cname{
+    display: inline;
+   float: right;
+}
+
+  /*jssor slider loading skin double-tail-spin css*/
+  .jssorl-004-double-tail-spin img {
+    animation-name: jssorl-004-double-tail-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-004-double-tail-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/*jssor slider bullet skin 031 css*/
+.jssorb031 {position:absolute;}
+.jssorb031 .i {position:absolute;cursor:pointer;}
+.jssorb031 .i .b {fill:#000;fill-opacity:0.6;stroke:#fff;stroke-width:1600;stroke-miterlimit:10;stroke-opacity:0.8;}
+.jssorb031 .i:hover .b {fill:#fff;fill-opacity:1;stroke:#000;stroke-opacity:1;}
+.jssorb031 .iav .b {fill:#fff;stroke:#000;stroke-width:1600;fill-opacity:.6;}
+.jssorb031 .i.idn {opacity:.3;}
+
+/*jssor slider arrow skin 051 css*/
+.jssora051 {display:block;position:absolute;cursor:pointer;}
+.jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+.jssora051:hover {opacity:.8;}
+.jssora051.jssora051dn {opacity:.5;}
+.jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+
+ /* responsive */
+ @media screen and (max-width:960px){
+    body{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        font-size: 16px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       
+    }
+    header{
+        margin-top: 40px;
+    }
+    a{
+        text-decoration: none;
+        
+    }
+    header #heading{
+        float: left;
+        color:#333333;
+      
+    }
+    header #heading h1,p{
+        margin: 0;
+      
+    }
+    header nav{
+        float: left;
+    }
+    header nav ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-radius: 10px;
+        background-color:#e2494b;
+        margin-top: 20px;
+    }
+    header nav ul li{
+        display: inline-block;
+        padding:20px;
+    }
+    header nav ul li a{
+        color: white;
+    }
+    header nav ul li:hover a{
+        color:#eba0a1;
+    }
+    
+     #line{
+        clear: both;
+        position: relative;
+        top:20px;
+        width: 100%;
+        height: 1px;
+        background-color: #333333;
+    }
+    /* main content */
+main pre{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:gray;
+    font-size: 1.2em;
+}
+main #slider{
+    height: 33.33%;
+    width: 100%;
+    background-color:#333333;
+    margin-bottom: 30px;
+}
+/* services */
+#services #ourservices{
+    text-align: center;
+}
+#services #ourservices hr{
+    position: relative;
+    top:-47px;
+    z-index: 1;
+}
+#services h2{
+    position: relative;
+   color: white;
+   background-color: #e2494b;
+   padding: 5px 25px 5px 25px;
+   text-align: center;
+   display: inline-block;
+   border-radius: 10px;
+   z-index: 100;
+}
+#services .service{
+    width: 300px;
+    display: inline-block;
+ 
+}
+#services .margin{
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+#services .service .box{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: #333333;
+  
+}
+
+#services .service h3{
+    position: relative;
+    top:-12px;
+    left: 20px;
+}
+#services .service h3,p{
+    color:#333333;
+    display: inline-block;
+    
+}
+#services .service a{
+    color:#e2494b;
+}
+
+/* players */
+#players #ourplayers{
+    text-align: center;
+    margin-top: 20px;
+    color: #333333;
+}
+#players #ourplayers hr{
+    position: relative;
+    top:-47px;
+    z-index: 1;
+}
+#players h2{
+    position: relative;
+   color: white;
+   background-color: #e2494b;
+   padding: 5px 25px 5px 25px;
+   text-align: center;
+   display: inline-block;
+   border-radius: 10px;
+   z-index: 100;
+}
+#players .player{
+    width: 165px;
+    display: inline-block;
+ 
+}
+#players .player .box{
+    height: 180px;
+    width: 180px;
+    display: inline-block;
+    background-color: #333333;
+    overflow: hidden;
+  
+}
+#players .player .box img{
+    width: 180px;
+}
+.pmargin{
+    margin-right: 45px;
+    margin-bottom: 20px;
+}
+#players .player a{
+    color:#e2494b;
+}
+
+ }
