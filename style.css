@@ -3,27 +3,31 @@ body{
     margin-right: auto;
  
     font-size: 16px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    
 }
 header{
     margin-top: 40px;
+
 }
 a{
     text-decoration: none;
     
 }
 header #heading{
-    float: left;
+
     color:#333333;
   
+}
+header #heading h1{
+    font-size: 2.5em;
 }
 header #heading h1,p{
     margin: 0;
   
 }
 header nav{
-    float: right;
+   
 }
 header nav ul{
     list-style: none;
@@ -31,23 +35,23 @@ header nav ul{
     margin: 0;
     border-radius: 10px;
     background-color:#e2494b;
- 
+    display: flex;
+    justify-content: space-around;
 }
-header nav ul li{
-    display: inline-block;
-    padding:20px;
+header .nav-item {
+    padding:15px 20px;
 }
-header nav ul li a{
-    color: white;
+.nav-item .nav-link{
+    color: white !important;
 }
-header nav ul li:hover a{
-    color:#eba0a1;
+.nav-item:hover .nav-link{
+    color:#eba0a1 !important;
 }
 
  #line{
     clear: both;
     position: relative;
-    top:20px;
+    top:5px;
     width: 100%;
     height: 1px;
     background-color: #333333;
@@ -61,9 +65,8 @@ main pre{
     font-size: 1.5em;
 }
 main #slider{
-    height: 350px;
-    width: 960px;
-    background-color:#333333;
+    
+    /* height: 500px; */
     margin-bottom: 30px;
 }
 
@@ -86,14 +89,14 @@ main #slider{
    border-radius: 10px;
    z-index: 100;
 }
-#services .service{
+/* #services .service{
     width: 300px;
     display: inline-block;
  
-}
-#services .margin{
+} */
+/* #services .margin{
     margin-right: 26px;
-}
+} */
 
 #services .service .box{
     height: 40px;
@@ -139,11 +142,10 @@ main #slider{
    z-index: 100;
 }
 #players .player{
-    width: 165px;
-    display: inline-block;
+    width:200px !important;
  
 }
-#players .player .box{
+/* #players .player .box{
     height: 180px;
     width: 180px;
     display: inline-block;
@@ -153,7 +155,7 @@ main #slider{
 }
 #players .player .box img{
     width: 180px;
-}
+} */
 .pmargin{
     margin-right: 26px;
 }
@@ -182,7 +184,7 @@ main #slider{
    border-radius: 10px;
    z-index: 100;
 }
-#works .work{
+/* #works .work{
     display: inline-block;
 }
 #works .work .box{
@@ -197,20 +199,20 @@ main #slider{
 }
 .wmargin{
    margin-right: 26px;
-}
+} */
 
 /* blog */
 footer{
     background-color: #e2e2e2;
     margin-top: 40px;
 }
-footer #blog{
+/* footer #blog{
     position: relative;
     top:-20px;
     width: 450px;
     padding: 20px;
     display: inline-block;
-}
+} */
 footer #blog h3{
     color: #999999;
 }
@@ -229,42 +231,41 @@ footer #blog .box{
     background-color: #333333;
     outline: 1px solid #333333;
     outline-offset:5px;
-    display: inline-block;
-    overflow: hidden;
+
 }
 footer #blog .box img{
-    width: 100px;
+    width: 100px !important;
 }
-footer #blog .desc{
+/* footer #blog .desc{
 width: 330px;
 display: inline-block;
 margin-left: 20px;
-}
-footer #blog .desc h4{
+} */
+/* footer #blog .desc h4{
     margin: 0 0 10px 0px;
-}
+} */
 
 /* company details */
-#detail{
+/* #detail{
     position: relative;
     top: -5px;
     width: 200px;
     display: inline-block;
     color: #999999;
-}
-#detail #name,#detail #tel{
+} */
+/* #detail #name,#detail #tel{
     margin-bottom: 10px;
-}
-#detail #name,#tel,#timings{
+} */
+#detail, #name,#tel,#timings{
     color: #999999;
 }
 
 /* contact */
-#contact{
+/* #contact{
     width: 200px;
     display: inline-block;
     
-}
+} */
 #contact h3{
     color: #999999;
 }
@@ -282,11 +283,10 @@ footer #blog .desc h4{
 /* copyrights */
 
 #copyrights hr{
-    margin-left: 20px;
-    margin-right: 20px;
+  
     color: rgb(119, 119, 119);
 }
-#textfooter{
+/* #textfooter{
     padding: 10px;
 }
 #copyrights #date{
@@ -295,7 +295,7 @@ footer #blog .desc h4{
 #copyrights #cname{
     display: inline;
    float: right;
-}
+} */
 
   /*jssor slider loading skin double-tail-spin css*/
   .jssorl-004-double-tail-spin img {
@@ -326,8 +326,49 @@ footer #blog .desc h4{
 .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
 
  /* responsive */
+
+
+/* 
+   medium screens */
+   @media screen and (max-width:768px){
+   
+    #players .player{
+        width:250px !important;
+     
+    }
+     }
+   
+
+   /* small screens */
+ @media screen and (max-width:576px){
+   .navbar-brand h2, #ourservices h2,#players h2,#works h2{
+       font-size: 1.5rem;
+   }
+   #services #ourservices hr,#players #ourplayers hr,#works #ourworks hr{
+    position: relative;
+    top:-43px;
+    z-index: 1;
+}
+
+#players .player{
+    width:100% !important;
+ 
+}
+.service h3{
+    font-size: 1.3rem;
+}
+footer #blog .post h4{
+    color: #e2494b;
+    font-size: 1rem;
+}
+footer #blog .post p{
+    color: #999999;
+    font-size: .8rem;
+}
+ }
+
  @media screen and (max-width:960px){
-    body{
+    /* body{
         margin-left: auto;
         margin-right: auto;
         width: 90%;
@@ -380,9 +421,9 @@ footer #blog .desc h4{
         width: 100%;
         height: 1px;
         background-color: #333333;
-    }
+    } */
     /* main content */
-main pre{
+/* main pre{
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:gray;
@@ -393,9 +434,9 @@ main #slider{
     width: 100%;
     background-color:#333333;
     margin-bottom: 30px;
-}
+} */
 /* services */
-#services #ourservices{
+/* #services #ourservices{
     text-align: center;
 }
 #services #ourservices hr{
@@ -443,10 +484,10 @@ main #slider{
 }
 #services .service a{
     color:#e2494b;
-}
+} */
 
 /* players */
-#players #ourplayers{
+/* #players #ourplayers{
     text-align: center;
     margin-top: 20px;
     color: #333333;
@@ -488,6 +529,6 @@ main #slider{
 }
 #players .player a{
     color:#e2494b;
-}
+} */
 
  }
